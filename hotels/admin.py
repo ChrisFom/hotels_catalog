@@ -8,7 +8,8 @@ class CityAdmin(admin.ModelAdmin):
 
 class HotelAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'address', 'phone', 'city')
+    list_filter = ('city',)
 
 
 admin.site.register(City, CityAdmin)
-admin.site.register(Hotel)
+admin.site.register(Hotel, HotelAdmin)
