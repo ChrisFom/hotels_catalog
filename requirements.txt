@@ -1,0 +1,12 @@
+asgiref==3.7.2
+Django==5.0.2
+django-filter==23.5
+django-phonenumber-field==7.3.0
+djangorestframework==3.14.0
+flake8==7.0.0
+mccabe==0.7.0
+phonenumbers==8.13.30
+pycodestyle==2.11.1
+pyflakes==3.2.0
+pytz==2024.1
+sqlparse==0.4.4
