@@ -11,5 +11,7 @@ docker-compose build, docker-compose up
   
   POST /api/accounts/users/register/ - регистрация юзера
   
-  GET /api/hotels/?city_id=<city_id>&from_id=<hotle_id>&limit=<number>/ - получение списка отелей
+  GET /api/hotels/hotels/ - получение списка отелей
+  
+  GET /api/hotels/hotels/?city_id=<city_id>&from_id=<hotle_id>&limit=<number>/ - получение списка отелей с фильтрами
 
