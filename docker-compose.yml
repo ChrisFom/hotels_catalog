@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app:/code
+    ports:
+      - "8000:8000"
+    container_name: hotels
+    restart: unless-stopped
+    networks:
+      - mynetwork
+    environment:
+      - DJANGO_SETTINGS_MODULE=hotels_catalog.settings
+
+
+networks:
+  mynetwork:
+    driver: bridge

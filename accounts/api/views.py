@@ -6,7 +6,8 @@ from django.contrib.auth import authenticate, login, logout
 
 from .serializers import UserRegisterSerializer, UserLoginSerializer, EmptySerializer
 from accounts.models import CustomUser
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework.authentication import (BasicAuthentication,
+                                           SessionAuthentication)
 
 
 class AuthViewSet(viewsets.GenericViewSet):

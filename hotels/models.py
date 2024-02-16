@@ -22,7 +22,8 @@ class Hotel(models.Model):
     phone = PhoneNumberField(max_length=30, unique=True,
                              verbose_name='Телефон',
                              null=True, blank=True,)
-    city = models.ForeignKey(City, verbose_name='Город',  on_delete=models.CASCADE)
+    city = models.ForeignKey(City, verbose_name='Город',
+                             on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'Отель'
